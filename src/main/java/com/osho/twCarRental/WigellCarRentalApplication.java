@@ -7,6 +7,11 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
+
+// Version 221027 with all methods, including redundant and non-required methods;
+// and with microservice configured
+
+
 @EnableEurekaClient // Manually added; might need
 @SpringBootApplication
 public class WigellCarRentalApplication {
