@@ -22,9 +22,9 @@ public class WigellCarRentalApplication {
         return new RestTemplate();
     }
 
-    @Bean public KeycloakSpringBootConfigResolver keycloakConfigResolver() {
-        return new KeycloakSpringBootConfigResolver();
-    }
+//    @Bean public KeycloakSpringBootConfigResolver keycloakConfigResolver() {
+//        return new KeycloakSpringBootConfigResolver();
+//    }
 
 
 }
