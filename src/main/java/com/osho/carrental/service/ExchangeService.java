@@ -30,9 +30,9 @@ public class ExchangeService implements ExchangeServiceRepository {
 
         double amount = actualOrder.getPrice(); // Extract amount from found order obj
 
-        // Use app-name for microservice instead of localhost/port; pass amount as url-var
-        // This is not through gateway, but through registered exchange-service in service registry
-        Exchange exchange = restTemplate.getForObject("http://EXCHANGE-ROUTE/change/" + amount, Exchange.class);
+        // Use app-name for microservice via gateway, instead of localhost/port;
+        // pass amount as url-var, and class as desired response type
+        Exchange exchange = restTemplate.getForObject("http://EXCHANGE-SERVICE/change/" + amount, Exchange.class);
 
         // Optionally update & save price in euro in the order, for later reference
         actualOrder.setPriceInEuro(exchange.getAmountInEur());
