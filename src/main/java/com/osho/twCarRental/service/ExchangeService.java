@@ -22,7 +22,7 @@ public class ExchangeService implements ExchangeServiceRepository {
 
     @Override
     public ResponseTemplateVO getExchangeService(int orderId) {
-        System.out.println("I am in TW main project exchange service method"); // Control print
+        System.out.println("I am in car-rental exchange service method"); // Control print
 
         ResponseTemplateVO vo = new ResponseTemplateVO(); // Enabling full/combined response
 
